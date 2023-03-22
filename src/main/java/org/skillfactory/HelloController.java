@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.*;
 public class HelloController {
 
     @RequestMapping(value = "/student", method = RequestMethod.GET) //Можно поменять на @GetMapping("/student")
-    @ResponseBody
+    //@ResponseBody
     public String helloStudent() {
-        return "Hello, student!";
+        //return "Hello, student!";
+        return "index";
     }
 
     @RequestMapping(value  = "/greetings/{name}")
