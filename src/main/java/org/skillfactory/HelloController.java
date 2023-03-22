@@ -9,13 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/hello")
 public class HelloController {
 
-//    @RequestMapping(value = "/student", method = RequestMethod.GET) //Можно поменять на @GetMapping("/student")
-//    @ResponseBody
-//    public String helloStudent() {
-//        //return "Hello, student!";
-//        //return "index";
-//    }
-
     @GetMapping("/student")
     public ModelAndView myData() {
         ModelAndView mav = new ModelAndView("index");
