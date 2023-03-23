@@ -2,7 +2,9 @@ package org.skillfactory.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class StudentData {
+import java.io.Serializable;
+
+public class StudentData implements Serializable {
 
     @JsonProperty("firstName")
     private String firstName;

@@ -1,7 +1,6 @@
 package org.skillfactory;
 
 import org.skillfactory.dto.StudentData;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,6 +22,9 @@ public class HelloController {
 
     @RequestMapping(value = "/student/submit", method = RequestMethod.POST)
     public String giveMeFeedbackAboutGrade(@RequestBody StudentData studentData) {
-        return "You are greate with your grade " + studentData.getGrade();
+        return "You are greate with your grade "
+                + studentData.getGrade() + "\n"
+                + studentData.getFirstName() + "\n"
+                + studentData.getLastName();
     }
 }
