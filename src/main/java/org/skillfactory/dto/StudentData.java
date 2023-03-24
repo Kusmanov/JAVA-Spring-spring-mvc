@@ -1,9 +1,11 @@
 package org.skillfactory.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
 import java.io.Serializable;
 
+@Data
 public class StudentData implements Serializable {
 
     @JsonProperty("firstName")
@@ -14,28 +16,4 @@ public class StudentData implements Serializable {
 
     @JsonProperty("grade")
     private int grade;
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public int getGrade() {
-        return grade;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
 }
