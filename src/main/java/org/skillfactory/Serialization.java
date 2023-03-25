@@ -3,11 +3,8 @@ package org.skillfactory;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.skillfactory.dto.StudentData;
 
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Serialization {
